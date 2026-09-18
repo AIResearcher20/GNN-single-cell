@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+title: "GNN-single-cell: Graph Representation Learning for Single-Cell Transcriptomics"
+message: "If you use this software in research, please cite it as below."
+type: software
+authors:
+  - family-names: Moafi
+    given-names: Sepideh 
+repository-code: "https://github.com/AIResearcher20/GNN-single-cell"
+license: MIT
+year: 2024
+keywords:
+  - single-cell RNA-seq
+  - graph neural networks
+  - GCN
+  - GAT
+  - GraphSAGE
+  - representation learning
+  - transcriptomics

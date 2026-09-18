@@ -35,18 +35,18 @@ Learning Biologically Meaningful Cellular Representations with Graph Neural Netw
 
 ---
 
-📌 Overview
+📌 📌 Overview
 
-CELLGRAPH is a research framework for learning biologically meaningful cellular representations from single-cell transcriptomic data using Graph Neural Networks (GNNs).
+GNN-single-cell is a research framework for learning biologically meaningful cellular representations from single-cell transcriptomic data using Graph Neural Networks (GNNs).
 
-Unlike traditional machine learning approaches that treat cells as independent samples, CELLGRAPH explicitly models cell–cell relationships through a graph-based representation, enabling:
+Unlike traditional machine learning approaches that treat cells as independent samples, GNN-single-cell explicitly models cell–cell relationships through a graph-based representation, enabling:
 
-· Accurate cellular cluster prediction (91.11% accuracy on PBMC 3k Leiden-derived clusters)
-· Biologically interpretable embeddings (Silhouette Score: 0.3156)
-· Robust performance across noise levels (95.93% at 20% noise)
-· Attention-based interpretability via GAT
-· Cross-dataset generalization analysis (PBMC 3k → PBMC 68k)
-· Multi-Omics-ready architecture (validated with an RNA + simulated ATAC proof-of-concept)
+- Accurate cellular cluster prediction (91.11% accuracy on PBMC 3k Leiden-derived clusters)
+- Biologically interpretable embeddings (Silhouette Score: 0.3156)
+- Robust performance across noise levels (95.93% at 20% noise)
+- Attention-based interpretability via GAT
+- Cross-dataset generalization analysis (PBMC 3k → PBMC 68k)
+- Multi-Omics-ready architecture (validated with an RNA + simulated ATAC proof-of-concept)
 
 🔬 Biological Interpretation: The predicted clusters were biologically validated using canonical marker genes (LYZ, S100A8, NKG7, HLA-DRA), confirming that the learned representations capture known immune cell states.
 
@@ -99,7 +99,7 @@ Note: This section is a proof of concept using simulated ATAC-like data. The arc
 
 🧪 Datasets
 
-We evaluated CELLGRAPH on two real single-cell RNA-seq datasets and one proof-of-concept multi-omics setup.
+We evaluated GNN-single-cell on two real single-cell RNA-seq datasets and one proof-of-concept multi-omics setup.
 
 Dataset Type Cells Features Usage
 PBMC 3k Real scRNA-seq 2,700 32,738 genes Main training & evaluation
@@ -299,7 +299,7 @@ High attention concentration was observed for isolated or rare cells, indicating
 
 📁 Project Structure
 
-CELLGRAPH/  
+GNN-single-cell/  
 ├── README.md                    # This file  
 ├── requirements.txt              # Dependencies  
 ├── LICENSE                       # MIT License  
@@ -338,8 +338,8 @@ CELLGRAPH/
 
 
 
-git clone https://github.com/AIReasercher20/CELLGRAPH.git  
-cd CELLGRAPH
+git clone https://github.com/AIReasercher20/GNN-single-cell.git  
+cd GNN-single-cell
 
 2. Install Dependencies
 
@@ -375,13 +375,17 @@ Scalability Deploy on Human Technopole HPC infrastructure Medium
 
 ---
 
-📄 Citation
+## Citation
 
-@software{cellgraph2026,  
-  author = {Sepideh Moafi},  
-  title = {CELLGRAPH: Graph Representation Learning for Single-Cell Transcriptomics},  
-  year = {2026},  
-  url = {https://github.com/AIResearcher20/CELLGRAPH}  
+If you use this work in research, please cite:
+
+```bibtex
+@software{Moafi2024gnn_single_cell,
+  author       = {Moafi, Sepideh},
+  title        = {GNN-single-cell: Graph Representation Learning for Single-Cell Transcriptomics},
+  year         = {2024},
+  url          = {https://github.com/AIResearcher20/GNN-single-cell},
+  license      = {MIT}
 }
 
 
